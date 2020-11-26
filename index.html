@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Swiper demo</title>
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="css/grid.css">
+<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+   
+    <!-- Just an image -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-theme">
+        <a class="navbar-brand" href="#">
+            <img class="logo" src="img/logo.png" width="40" height="40" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">Home</a>
+                <a class="nav-item nav-link" href="#">About</a>
+                <a class="nav-item nav-link" href="#">Features</a>
+                <a class="nav-item nav-link" href="#">Download</a>
+            </div>
+        </div>
+    </nav>
+   
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div id="routine" class="swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="row">
+                                <h1>Regiday</h1>
+                            </div>
+                            <div class="row">
+                                <h3>Make your day better!</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg sm-hidden hidden-xs hidden-sm">
+                            <img src="img/routine.png" alt="" width="208" height="450">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="weather" class="swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="row">
+                                <h1>Regiday</h1>
+                            </div>
+                            <div class="row">
+                                <h3>Always know what the weather is like!</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <img src="img/weather.png" alt="" width="208" height="450">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="map" class="swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="row">
+                                <h1>Regiday</h1>
+                            </div>
+                            <div class="row">
+                                <h3>Track your geolocation online!</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <img src="img/map.png" alt="" width="208" height="450">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        effect: 'fade',
+            // Autoplay
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+            // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+            // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+        },
+    })
+    </script>
+</body>
+
+</html>
