@@ -1,1 +1,0 @@
-# regiday.github.io
