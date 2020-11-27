@@ -51,6 +51,15 @@ body {
     box-shadow: 0px 2px 19px 5px rgba(0,0,0,0.21);
 }
 
+.bg-theme .navbar-toggler {
+    border: 3px solid #F3F7F0;
+    border-radius: 12px;
+}
+
+.bg-theme .navbar-toggler-icon {
+    background-image: url('../img/list.png');
+}
+
 .nav-item {
     color: #F3F7F0;
 }
@@ -60,15 +69,42 @@ body {
 }
 
 img {
-    border-radius: 30px;
     box-shadow: 2px 2px 19px 5px rgba(0,0,0,0.21);
 }
 
+.mobile {
+    border: 6px solid #19323C;
+    border-radius: 37px;
+    margin-top: 45px;
+}
+
 h1 {
-    margin-top: 30%;
+    margin-top: 37%;
 }
 
 h1, h3 {
     margin-left: 10%;
     color: #19323C;
+}
+
+@media screen and (max-device-width:480px){
+    .centered {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        margin-top: 50px!important; 
+    }
+    
+    .mobile {
+        display: block;
+        margin-top: 30px;
+    }
+    
+    .nav-item {
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    /*Далее остальные стили*/
 }
