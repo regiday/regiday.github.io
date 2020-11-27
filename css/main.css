@@ -19,7 +19,7 @@ body {
     
     text-align: center;
     font-size: 18px;
-    background: linear-gradient(45deg, #f3f7f0, #f2cece);
+    background: linear-gradient(45deg, #f3f7f0, #a93f55);
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -97,9 +97,13 @@ h1, h3 {
         margin-top: 50px!important; 
     }
     
+    h1, h3 {
+        font-size: 30px;
+    }
+    
     .mobile {
         display: block;
-        margin-top: 30px;
+        margin-top: 15px;
     }
     
     .nav-item {
