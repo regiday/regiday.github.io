@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/grid.css">
 <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/prealoader.css">
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="assets/js/bundle.js"></script>
@@ -41,6 +42,10 @@
 </head>
 
 <body>
+  
+    <section id="preloader">
+        <img src="img/splash.png" alt="" width="400" height="400" class="load">
+    </section>
    
     <!-- Just an image -->
     <nav class="navbar fixed-top navbar-expand-lg bg-theme">
@@ -52,16 +57,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link centered" href="#">Home</a>
-                <a class="nav-item nav-link centered" href="#">About</a>
-                <a class="nav-item nav-link centered" href="#">Features</a>
-                <a class="nav-item nav-link centered" href="#">Download</a>
+                <a class="nav-item nav-link centered" href="#home">Home</a>
+                <a class="nav-item nav-link centered" href="#about">About</a>
+                <a class="nav-item nav-link centered" href="#features">Features</a>
+                <a class="nav-item nav-link centered" href="#download">Download</a>
             </div>
         </div>
     </nav>
    
     <!-- Swiper -->
-    <div class="swiper-container">
+    <div id="home" class="swiper-container">
         <div class="swiper-wrapper">
             <div id="routine" class="swiper-slide">
                 <div class="container">
@@ -155,6 +160,20 @@
         },
     })
     </script>
+    
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded');
+        }
+        
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 5000);
+        }
+    </script>  
 </body>
 
 </html>

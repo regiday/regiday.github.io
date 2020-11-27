@@ -1,6 +1,7 @@
 html, body {
     position: relative;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -9,6 +10,70 @@ body {
     margin: 0;
     padding: 0;
 }
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+
+#preloader {
+    position: absolute;
+    z-index: 999;
+    background: linear-gradient(45deg, #ff304f, #a93f55);
+}
+
+.navbar {
+    z-index: 998;
+}
+
+.loaded_hiding #preloader {
+    transition: 0.7s opacity;
+    opacity: 0;
+}
+
+.loaded #preloader {
+    display: none;
+}
+
+.load {
+    display: block;
+    margin: 10% auto;
+    animation-name: pulsing;
+	-webkit-animation: pulsing 2s infinite;
+    animation: pulsing 2s infinite;
+}
+
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform: scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+  }
+}
+
 
 .swiper-container {
     width: 100%;
@@ -68,7 +133,7 @@ body {
     color: #ff304f;
 }
 
-img {
+.logo {
     box-shadow: 2px 2px 19px 5px rgba(0,0,0,0.21);
 }
 
@@ -108,6 +173,10 @@ h1, h3 {
     .nav-item {
         font-weight: 400;
         text-transform: uppercase;
+    }
+    
+    .load {
+        margin: 30% auto;
     }
     /*Далее остальные стили*/
 }
