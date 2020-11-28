@@ -44,7 +44,7 @@
 <body>
   
     <section id="preloader">
-        <img src="img/splash.png" alt="" width="400" height="400" class="load">
+        <img src="img/splash.png" alt="" width="350" class="load">
     </section>
    
     <!-- Just an image -->
@@ -71,7 +71,7 @@
             <div id="routine" class="swiper-slide">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg revealator-slideright">
+                        <div class="col-lg revealator-fade revealator-delay# revealator-duration10">
                             <div class="row">
                                 <h1 class="centered">Regiday</h1>
                             </div>
@@ -79,8 +79,8 @@
                                 <h3 class="centered">Make your day better!</h3>
                             </div>
                         </div>
-                        <div class="col-lg revealator-slideleft sm-hidden hidden-xs hidden-sm">
-                            <img class="centered mobile" src="img/routine.png" alt="" width="208" height="450">
+                        <div class="col-lg revealator-fade revealator-delay# revealator-duration10 sm-hidden hidden-xs hidden-sm">
+                            <img class="centered mobile" src="img/routine.png" alt="" width="220">
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <div class="col-lg">
-                            <img class="centered mobile" src="img/weather.png" alt="" width="208" height="450">
+                            <img class="centered mobile" src="img/weather.png" alt="" width="220">
                         </div>
                     </div>
                 </div>
@@ -114,7 +114,7 @@
                             </div>
                         </div>
                         <div class="col-lg">
-                            <img class="centered mobile" src="img/map.png" alt="" width="208" height="450">
+                            <img class="centered mobile" src="img/map.png" alt="" width="220">
                         </div>
                     </div>
                 </div>
@@ -127,6 +127,14 @@
     </div>
     
     <section id="about">
+        
+    </section>
+    
+    <section id="features">
+        
+    </section>
+    
+    <section id="download">
         
     </section>
 
@@ -171,7 +179,7 @@
             window.setTimeout(function () {
                 document.body.classList.add('loaded');
                 document.body.classList.remove('loaded_hiding');
-            }, 5000);
+            }, 1500);
         }
     </script>  
 </body>
