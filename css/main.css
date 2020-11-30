@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Catamaran', sans-serif;
     font-size: 14px;
     margin: 0;
     padding: 0;
@@ -14,6 +14,7 @@ body {
 section {
     width: 100%;
     height: 100%;
+    background: #f3f7f0;
 }
 
 
@@ -84,8 +85,10 @@ section {
     
     text-align: center;
     font-size: 18px;
-    background: linear-gradient(45deg, #f3f7f0, #a93f55);
+    background: linear-gradient(45deg, #f3f7f0 45%, #ff304f 5%);
 
+    background-attachment: scroll;
+    
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -144,8 +147,15 @@ section {
     box-shadow: 3px 3px 19px 5px rgba(0,0,0,0.41);
 }
 
+h3, p, a {
+    font-family: 'Questrial', sans-serif;
+}
+
 h1 {
-    margin-top: 37%;
+    font-size: 45px;
+    margin-top: 38%;
+    margin-bottom: 0;
+    font-weight: 600;
 }
 
 h1, h3 {
@@ -153,7 +163,78 @@ h1, h3 {
     color: #19323C;
 }
 
+h2 {
+    margin-top: 50%;
+    font-size: 45px;
+}
+
+p {
+    margin-top: 50%;
+    font-size: 20px;
+}
+
+.f {
+    margin-top: 14%;
+    text-align: center;
+}
+
+.text-download {
+    width: 60%;
+    margin: 12% auto;
+    text-align: center;
+}
+
+#download {
+    background: linear-gradient(45deg,
+#ff304f 16%,
+#f3f7f0 16%, #f3f7f0 40%,
+#f3f7f0 40%, #f3f7f0 60%,
+#f3f7f0 60%, #f3f7f0 84%,
+#ff304f 84%);
+        
+}
+
+#features {
+    background: linear-gradient(180deg,
+#ff304f 16%,
+#f3f7f0 16%, #f3f7f0 40%,
+#f3f7f0 40%, #f3f7f0 60%,
+#f3f7f0 60%, #f3f7f0 92%,
+#ff304f 92%);
+        
+}
+
+#about {
+    background: linear-gradient(to right,
+#ff304f 5%,
+#f3f7f0 5%, #f3f7f0 40%,
+#f3f7f0 40%, #f3f7f0 60%,
+#f3f7f0 60%, #f3f7f0 95%,
+#ff304f 95%);
+}
+
+.button-download {
+    background: #ff304f;
+    color: #F3F7F0;
+    padding: 10px 20px;
+    font-size: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.button-download:hover {
+    background: #a93f55;
+    color: #19323C;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 @media screen and (max-device-width:800px){
+    
+    .swiper-slide {
+        background: linear-gradient(45deg, #ff304f 45%, #f3f7f0 5%);
+    }
+    
     .centered {
         text-align: center;
         margin: 0 auto;
@@ -166,6 +247,16 @@ h1, h3 {
     
     h3 {
         font-size: 40px;
+    }
+    
+    h2 {
+        margin-top: 40%;
+        font-size: 65px;
+    }
+
+    p {
+        margin-top: 5%;
+        font-size: 24px;
     }
     
     .mobile {
@@ -188,6 +279,11 @@ h1, h3 {
 
 
 @media screen and (max-device-width:600px){
+    
+    .swiper-slide {
+        background: linear-gradient(45deg, #ff304f 45%, #f3f7f0 5%);
+    }
+    
     .centered {
         text-align: center;
         margin: 0 auto;
@@ -200,6 +296,16 @@ h1, h3 {
     
     h3 {
         font-size: 35px;
+    }
+    
+    h2 {
+        margin-top: 45%;
+        font-size: 50px;
+    }
+
+    p {
+        margin-top: 5%;
+        font-size: 17px;
     }
     
     .mobile {
@@ -220,6 +326,11 @@ h1, h3 {
 }
 
 @media screen and (max-device-width:480px){
+    
+    .swiper-slide {
+        background: linear-gradient(45deg, #ff304f 45%, #f3f7f0 5%);
+    }
+    
     .centered {
         text-align: center;
         margin: 0 auto;
@@ -232,6 +343,16 @@ h1, h3 {
     
     h3 {
         font-size: 30px;
+    }
+    
+    h2 {
+        margin-top: 45%;
+        font-size: 50px;
+    }
+
+    p {
+        margin-top: 5%;
+        font-size: 18px;
     }
     
     .mobile {
@@ -253,6 +374,11 @@ h1, h3 {
 }
 
 @media screen and (max-device-width:400px){
+    
+    .swiper-slide {
+        background: linear-gradient(45deg, #ff304f 45%, #f3f7f0 5%);
+    }
+    
     .centered {
         text-align: center;
         margin: 0 auto;
@@ -265,6 +391,64 @@ h1, h3 {
     
     h3 {
         font-size: 20px;
+    }
+    
+    h2 {
+        margin-top: 70%;
+        font-size: 45px;
+    }
+
+    p {
+        margin-top: 5%;
+        font-size: 17px;
+    }
+    
+    .mobile {
+        display: block;
+        margin-top: 15px;
+        width: 180px;
+    }
+    
+    .nav-item {
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    
+    .load {
+        width: 250px;
+        margin: 50% auto;
+    }
+    /*Далее остальные стили*/
+}
+
+@media screen and (max-device-width:370px){
+    
+    .swiper-slide {
+        background: linear-gradient(45deg, #ff304f 45%, #f3f7f0 5%);
+    }
+    
+    .centered {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        margin-top: 50px!important; 
+        font-size: 35px;
+    }
+    
+    h3 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        margin-top: 45%;
+        font-size: 40px;
+    }
+
+    p {
+        margin-top: 5%;
+        font-size: 15px;
     }
     
     .mobile {
