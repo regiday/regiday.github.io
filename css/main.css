@@ -207,7 +207,7 @@ p {
 }
 
 .skills-text {
-    font-size: 18px;
+    font-size: 23px;
     margin-top: 25px;
 }
 
@@ -325,6 +325,11 @@ p {
         margin-top: 20vh;
         text-align: center;
     }
+    
+    
+    .text-download {
+        margin-top: 30%!important;
+    }
 
 
 @media screen and (max-device-width:600px){
@@ -372,6 +377,29 @@ p {
         margin: 30% auto;
     }
     /*Далее остальные стили*/
+    
+    .text-download {
+        margin-top: 25%!important;
+    }
+    
+    .features {
+        font-size: 15px;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .skills-img {
+        width: 65px;
+    }
+
+    .skills-text {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    
+    .f {
+        margin-top: 30%;
+    }
 }
 
 @media screen and (max-device-width:480px){
@@ -438,6 +466,10 @@ p {
     
     .f {
         margin-top: 45%;
+    }
+    
+    .text-download {
+        margin-top: 20%!important;
     }
 }
 
