@@ -5,6 +5,7 @@ html, body {
     -webkit-scroll-behavior: smooth;
     -ms-scroll-behavior: smooth;
     color: #19323C;
+    outline: none!important;
 }
 
 body {
