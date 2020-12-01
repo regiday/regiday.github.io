@@ -5,7 +5,6 @@ html, body {
     -webkit-scroll-behavior: smooth;
     -ms-scroll-behavior: smooth;
     color: #19323C;
-    outline: none!important;
 }
 
 body {
@@ -21,6 +20,9 @@ section {
     background: #f3f7f0;
 }
 
+button, .swiper-button-prev, .swiper-button-next {
+    outline: none!important;
+}
 
 #preloader {
     position: absolute;
